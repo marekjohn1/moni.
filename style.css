@@ -7,3 +7,15 @@
 
 /* Platební obrazovka: pouze demonstrační, žádné účtování */
 .paywall{position:fixed;inset:0;z-index:999;background:radial-gradient(ellipse at 50% 8%,#163565 0%,#071020 55%);color:#fff;overflow-y:auto;padding:calc(env(safe-area-inset-top) + 28px) 22px calc(env(safe-area-inset-bottom) + 28px);display:flex;align-items:center;justify-content:center}.paywall[hidden]{display:none}.paywall-card{width:min(100%,430px);text-align:center}.paywall-mark{width:100px;height:100px;object-fit:contain}.paywall-brand{font-weight:800;font-size:31px;letter-spacing:-1px;margin:3px 0 22px}.paywall h1{font-size:27px;line-height:1.18;margin:0 0 14px}.paywall p{color:#b3c3df;line-height:1.5}.paywall-price{font-size:46px;font-weight:850;margin:24px 0 12px}.paywall-price small{font-size:14px;font-weight:500;color:#9db5d6}.paywall ul{list-style:none;padding:0;text-align:left;background:#122440;border:1px solid #29456c;border-radius:18px;margin:18px 0;padding:17px 20px}.paywall li{padding:7px 0;font-size:14px}.paywall li:before{content:'✓';color:#61d6b0;font-weight:bold;margin-right:11px}.paywall-buy,.paywall-preview{width:100%;border:0;border-radius:16px;padding:17px;font-size:16px;font-weight:750}.paywall-buy{background:#236de6;color:white;opacity:.55}.paywall-note{font-size:12px}.paywall-preview{background:transparent;color:#8dbbff;border:1px solid #365a87;margin-top:8px}
+
+/* Jednotný systém ikon – žádné emoji ani náhradní znaky */
+.ui-icon{width:23px;height:23px;display:inline-block;vertical-align:middle;flex-shrink:0;color:inherit;stroke-width:1.8}
+.nav .ui-icon{width:25px;height:25px;margin-bottom:7px}
+.nav button.selected .ui-icon{width:31px;height:31px}
+.gear .ui-icon{width:25px;height:25px}
+.bubble .ui-icon{width:34px;height:34px}
+.category .ui-icon{width:27px;height:27px}
+.seg button .ui-icon{width:19px;height:19px;margin-right:7px}
+.txicon .ui-icon{width:24px;height:24px}
+.tile .ui-icon{width:20px;height:20px;margin-right:7px}
+.setting-cat-icon .ui-icon{width:22px;height:22px;color:#90bfff}

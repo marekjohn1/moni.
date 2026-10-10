@@ -1,15 +1,7 @@
-MONI. – první funkční verze PWA
+moni. v6 — čisté šipky a stabilní rozhraní.
 
-JAK SPUSTIT:
-1. Rozbal ZIP. Nahraj OBSAH složky moni-app (index.html, app.js, style.css, icon.png, mark.png, manifest.webmanifest, sw.js) do kořenového adresáře webového hostingu (např. GitHub Pages).
-2. Otevři HTTPS adresu webu na iPhonu v Safari.
-3. Sdílet → Přidat na plochu.
+Tlačítka Výdaj/Příjem používají jednoduché šipky bez vodorovné čárky. Celá stránka je ukotvena; posouvá se pouze vnitřní obsah. Spodní navigace zůstává na místě.
 
-Pro místní test na počítači lze ve složce spustit: python -m http.server 8000
-Potom otevřít http://localhost:8000
+Před aktualizací exportuj zálohu v Nastavení. Nahraj všech 8 rozbalených souborů do kořene repozitáře GitHub Pages. Po nahrání vyčkej na publikaci a případně aplikaci znovu otevři.
 
-Data se ukládají lokálně v prohlížeči (localStorage), bez účtu a bez synchronizace. Doporučujeme exportovat zálohy v Nastavení.
-
-Funkce: první spuštění, počáteční stavy, vlastní kategorie, příjem/výdaj, převod, vratka, blokace, historie, úpravy, smazání, statistiky, export/import JSON.
-
-Poznámka: bez bankovního propojení je stav blokací zadáván ručně. Vratka je samostatný typ pohybu a snižuje čisté výdaje měsíce, nikoli konkrétní kategorii. Výchozí kategorie Úspory je pouze volitelná kategorie výdaje; pro přesuny vlastních úspor používej Převod.
+Platební brána není aktivní.

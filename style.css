@@ -149,3 +149,25 @@ body{position:fixed;inset:0;touch-action:pan-y;overscroll-behavior:none}
 /* Simple arrows: no extra horizontal stroke. */
 .quick .bubble .ui-icon{width:35px;height:35px;stroke-width:2.1}
 @media (display-mode:standalone){.shell{padding-top:calc(env(safe-area-inset-top) + 20px)}}
+
+/* v7: clearly different action icons and stable app viewport */
+html,body{margin:0!important;width:100%!important;height:100%!important;overflow:hidden!important;overscroll-behavior:none!important}
+body{position:fixed!important;inset:0!important;touch-action:pan-y}
+#app{height:100dvh!important;overflow:hidden!important;position:relative}
+.shell{height:100dvh!important;max-height:100dvh!important;min-height:0!important;overflow-y:auto!important;overscroll-behavior-y:contain!important;-webkit-overflow-scrolling:touch!important;touch-action:pan-y!important}
+.nav{position:fixed!important;bottom:calc(12px + env(safe-area-inset-bottom))!important}
+.quick .bubble{width:76px;height:76px;background:transparent!important;border:0!important;box-shadow:none!important}
+.quick .bubble .hero-arrow{width:55px!important;height:55px!important;stroke-width:2.8!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.quick button{gap:10px!important}
+@media(display-mode:standalone){body{overscroll-behavior:none!important}}
+
+/* v8: bottom navigation anchored to the actual app viewport, not scroll content */
+html,body{width:100%!important;height:100%!important;overflow:hidden!important;margin:0!important;overscroll-behavior:none!important}
+body{position:fixed!important;inset:0!important}
+#app{position:fixed!important;inset:0!important;width:100%!important;height:auto!important;max-height:none!important;overflow:hidden!important;display:block!important;isolation:isolate}
+#app>.shell{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-height:100%!important;min-height:0!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain!important;-webkit-overflow-scrolling:touch!important;padding-bottom:calc(132px + env(safe-area-inset-bottom))!important;scroll-padding-bottom:calc(132px + env(safe-area-inset-bottom))!important}
+#app>.nav{position:absolute!important;left:50%!important;right:auto!important;top:auto!important;bottom:calc(14px + env(safe-area-inset-bottom))!important;transform:translateX(-50%)!important;width:min(calc(100% - 30px),500px)!important;height:76px!important;z-index:80!important;margin:0!important}
+/* Onboarding and entry screens have no bottom nav and can use the full available space. */
+#app>.shell.onboard,#app>.shell:has(#entryForm){padding-bottom:calc(32px + env(safe-area-inset-bottom))!important}
+/* iOS: avoid clipping the last row when the keyboard is visible. */
+#app>.shell input,#app>.shell textarea{scroll-margin-bottom:140px}

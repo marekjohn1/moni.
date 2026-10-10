@@ -1,7 +1,1 @@
-moni. v6 — čisté šipky a stabilní rozhraní.
-
-Tlačítka Výdaj/Příjem používají jednoduché šipky bez vodorovné čárky. Celá stránka je ukotvena; posouvá se pouze vnitřní obsah. Spodní navigace zůstává na místě.
-
-Před aktualizací exportuj zálohu v Nastavení. Nahraj všech 8 rozbalených souborů do kořene repozitáře GitHub Pages. Po nahrání vyčkej na publikaci a případně aplikaci znovu otevři.
-
-Platební brána není aktivní.
+moni. v8 — spodní navigace je pevně ukotvená ke spodní hraně aplikace. Obsah se posouvá samostatně a má dostatečné spodní odsazení. Všechny funkce a data zůstávají zachované. Rozbal ZIP a nahraj všech 8 souborů do kořene GitHub repozitáře. Před aktualizací exportuj zálohu dat.
